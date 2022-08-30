@@ -44,5 +44,38 @@ public class Main {
                 smallest_int++;
         }
         System.out.println (smallest_int);
+
+
+        // HW 6
+        int p = 23;
+        boolean prime = true;
+
+        if (p == 2 || p == 3)
+            prime = true;
+        else if (p == 1 || p % 2 == 0 || p % 3 == 0)
+            prime = false;
+        else {
+            int c = 5;
+            while (prime && c <= Math.sqrt(p)) {
+                if (p % c == 0) {
+                    prime = false;
+                }
+                else
+                    c = c + 2;
+            }
+        }
+        if (prime)
+            System.out.println ("The number is a prime number.");
+        else
+            System.out.println ("The number is not a prime number.");
+
+
+        // HW 7
+        boolean A = true, B = false, statement;
+        if (A == B)
+            statement = true;
+        else
+            statement = false;
+        System.out.println (statement);
     }
 }
