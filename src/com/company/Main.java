@@ -57,9 +57,8 @@ public class Main {
         else {
             int c = 5;
             while (prime && c <= Math.sqrt(p)) {
-                if (p % c == 0) {
+                if (p % c == 0)
                     prime = false;
-                }
                 else
                     c = c + 2;
             }
